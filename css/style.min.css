@@ -1032,6 +1032,7 @@ footer .appstore .icon:hover {
     width: 110px;
     height: 22px;
     font-size: 10px;
+    line-height: 10px;
   }
   .subheader_num {
     font-size: 12px;
@@ -1053,6 +1054,7 @@ footer .appstore .icon:hover {
   .promo_btn {
     width: 210px;
     height: 50px;
+    line-height: 50px;
   }
 
   .title {
