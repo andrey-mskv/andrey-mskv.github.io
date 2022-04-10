@@ -1,0 +1,29 @@
+@mixin title
+    font-weight: 400
+    font-size: 80px
+    line-height: 100px
+    margin: 0 60px
+    color: $main_color
+
+@mixin a_menu
+    font-size: 18px
+    line-height: 29px
+    color: $main_color
+    text-decoration: none
+    transition: .5s all
+    &:hover
+        color: $main_color_h
+
+@mixin btn
+    height: 50px
+    padding: 0 17px
+    border: 2px solid $main_color
+    border-radius: 3px
+    font-size: 20px
+    line-height: 29px
+    color: $main_color
+    transition: .3s all
+    &:hover
+        color: $second_color
+        background-color: $main_color
+    
