@@ -1,0 +1,157 @@
+*
+    font-family: 'Roboto', sans-serif
+    font-size: 20px
+    // margin: 0
+
+// .flex
+//     display: flex
+
+.container
+    width: 1440px
+    margin: 0 auto
+    padding: 0 100px
+
+.head
+    .container
+        display: flex
+        justify-content: space-between
+        height: 380px
+    &_descr
+        position: relative
+        width: 800px
+        margin-top: 80px
+        // display: flex
+        .name
+            font-weight: 900
+            font-size: 50px
+            
+        h2
+            font-size: 36px
+            &::after
+                content: 'junior'
+                padding-left: 10px
+                opacity: .3
+        .about
+            margin-top: 30px
+            line-height: 40px
+            text-align: justify
+            transition: 1s
+            
+            .latin
+                font-size: 24px
+                position: absolute
+                bottom: 0
+                left: 0
+                opacity: 1
+                transition: .6s all
+            &:hover .latin
+                opacity: 0
+            .russian
+                font-size: 24px
+                position: absolute
+                bottom: 0
+                left: 0
+                opacity: 0
+                transition: .6s all
+                a
+                    color: black
+                    opacity: 0.5
+                    text-decoration: none
+                    font-size: 24px
+                    &:hover
+                        opacity: 1
+            &:hover .russian
+                opacity: 1
+    &_photo
+        align-self: end
+        opacity: .9
+
+.title
+    font-weight: 900
+    font-size: 50px
+
+.content
+    margin-top: 60px
+    display: flex
+    &_right
+        width: 30%
+        margin-right: 100px
+        .tools
+            margin-bottom: 60px
+            &_1, &_2, &_3
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-top: 10px
+            &_name
+                font-size: 20px
+            .progress
+                width: 150px
+                height: 16px
+                border: 1px solid #969696
+                padding: 1px
+                border-radius: 100px
+                .value
+                    height: 100%
+                    background-color: #523c3c
+                    border-radius: 100px
+                    animation: load 3s normal forwards
+            &_1
+                .value
+                    width: 55%
+            &_2
+                .value
+                    width: 20%
+            &_3
+                .value
+                    width: 10%
+        .education
+            margin-bottom: 60px
+            .date
+                display: block
+                // margin-bottom: 16px
+                font-weight: 300
+            .place
+                // margin-bottom: 16px
+                font-weight: 900
+                line-height: 25px
+            .wrap
+                margin-bottom: 30px
+                line-height: 35px
+        .contact
+            margin-bottom: 60px
+            a
+                color: black
+                display: block
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    color: blue
+        .languages
+            margin-bottom: 60px
+            p
+                margin-bottom: 0
+    &_training
+        width: 70%
+        // margin-left: 100px
+        // background-color: grey
+        &_1, &_2, &_3, &_4
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 100px
+            p
+                margin-bottom: 0
+            .name, .skill
+                font-weight: 300
+            .wrap
+                height: 100px
+                width: 300px
+                border: 1px solid black
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: 0.3s all
+                opacity: .6
+                &:hover
+                    opacity: 1
