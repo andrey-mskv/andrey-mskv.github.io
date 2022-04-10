@@ -1,0 +1,129 @@
+.container
+	max-width: 1440px
+	padding: 0 20px
+	margin: 0 auto
+.flexbox
+	display: flex
+.flex-jfc
+	justify-content: center
+.flex-aic
+	align-items: center
+.flex-jcsb
+	justify-content: space-between
+.column
+	flex-direction: column
+.first_btn
+	@include btn
+
+
+
+header
+	height: 128px
+	// border: 1px solid blue
+	padding: 40px 0
+	.main_menu
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			margin-right: 36px
+			&:last-child
+				margin-right: 0px
+			a
+				@include a_menu
+	nav
+		width: 630px
+		height: 48px
+	
+.section_1
+	padding-top: 84px
+	h1
+		@include title
+		margin: 0
+	.mainBackground
+		display: block
+		margin: 136px 20px 0 20px
+		height: 928px
+		border-radius: 16px
+		background: url(../img/main_bg.jpg) center (center / cover) no-repeat
+
+.title
+	@include title
+
+.section_2
+	position: relative
+	padding: 84px 0
+	min-height: 300px
+	button
+		position: absolute
+		bottom: 0
+		left: 60px
+
+.section_3
+	min-height: 1066px
+	.frame
+		margin: 90px 40px
+		gap: 100px
+		.info
+			flex-direction: column
+			align-items: flex-start
+			gap: 30px
+			.descr
+				font-size: 38px
+				line-height: 44px
+				color: $main_color
+		.img
+			height: 886px
+			min-width: 590px
+			border-radius: 30px
+		&_1
+			flex-direction: row-reverse
+			.img
+				background: url(../img/slide_1.jpg) center (center / cover) no-repeat
+		&_2
+			.img
+				background: url(../img/slide_2.jpg) center (center / cover) no-repeat
+
+.section_4
+	.wrapper
+		padding: 80px 40px
+		min-height: 476px
+		background-color: $main_color
+		border-radius: 16px
+		.title, .txt
+			margin: 0
+			color: $second_color
+		.txt
+			margin-top: 30px
+			font-size: 26px
+			line-height: 36px
+
+.section_5
+	position: relative
+	height: 380px
+	padding: 80px 0
+	button
+		position: absolute
+		bottom: 100px
+		left: 60px
+
+footer
+	min-height: 396px
+	.wrap
+		padding: 100px 0
+		.leftside
+			width: 50%
+			height: 196px
+			p
+				font-size: 18px
+				line-height: 29px
+		.rightside
+			width: 50%
+			height: 196px
+			ul
+				height: 196px
+				flex-wrap: wrap
+				list-style: none
+				li
+					a
+						@include a_menu
