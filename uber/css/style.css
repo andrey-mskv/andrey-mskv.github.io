@@ -982,7 +982,7 @@ footer .appstore .icon:hover {
             order: 2;
   }
   footer .center {
-    width: 100%;
+    width: 60%;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-ordinal-group: 2;
@@ -1041,6 +1041,9 @@ footer .appstore .icon:hover {
     font-size: 10px;
     line-height: 10px;
   }
+  .subheader_btn:hover {
+    background: inherit;
+  }
   .subheader_num {
     font-size: 12px;
     margin-bottom: 6px;
@@ -1068,5 +1071,38 @@ footer .appstore .icon:hover {
   .title {
     font-size: 16px;
     margin-top: 5px;
+  }
+
+  .auto {
+    min-height: 393px;
+    background: black;
+  }
+  .auto .title, .auto .subtitle {
+    display: none;
+  }
+  .auto_txt {
+    color: #FFF;
+  }
+
+  .world {
+    min-height: 360px;
+    padding: 24px 0;
+  }
+  .world .title {
+    line-height: 15px;
+    padding: 14px 0;
+    margin: 0;
+  }
+  .world .subtitle {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  .world a {
+    width: 100%;
+    bottom: 30px;
+  }
+
+  footer .center {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
