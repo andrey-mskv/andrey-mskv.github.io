@@ -174,7 +174,7 @@
 .content_training {
   width: 70%;
 }
-.content_training_1, .content_training_2, .content_training_3, .content_training_4 {
+.content_training_1, .content_training_2, .content_training_3, .content_training_4, .content_training_5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,13 +186,13 @@
           align-items: center;
   margin-bottom: 100px;
 }
-.content_training_1 p, .content_training_2 p, .content_training_3 p, .content_training_4 p {
+.content_training_1 p, .content_training_2 p, .content_training_3 p, .content_training_4 p, .content_training_5 p {
   margin-bottom: 0;
 }
-.content_training_1 .name, .content_training_1 .skill, .content_training_2 .name, .content_training_2 .skill, .content_training_3 .name, .content_training_3 .skill, .content_training_4 .name, .content_training_4 .skill {
+.content_training_1 .name, .content_training_1 .skill, .content_training_2 .name, .content_training_2 .skill, .content_training_3 .name, .content_training_3 .skill, .content_training_4 .name, .content_training_4 .skill, .content_training_5 .name, .content_training_5 .skill {
   font-weight: 300;
 }
-.content_training_1 .wrap, .content_training_2 .wrap, .content_training_3 .wrap, .content_training_4 .wrap {
+.content_training_1 .wrap, .content_training_2 .wrap, .content_training_3 .wrap, .content_training_4 .wrap, .content_training_5 .wrap {
   height: 100px;
   width: 300px;
   border: 1px solid black;
@@ -209,6 +209,6 @@
   transition: 0.3s all;
   opacity: 0.6;
 }
-.content_training_1 .wrap:hover, .content_training_2 .wrap:hover, .content_training_3 .wrap:hover, .content_training_4 .wrap:hover {
+.content_training_1 .wrap:hover, .content_training_2 .wrap:hover, .content_training_3 .wrap:hover, .content_training_4 .wrap:hover, .content_training_5 .wrap:hover {
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */
