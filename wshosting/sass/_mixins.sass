@@ -1,0 +1,102 @@
+=h1-text()
+	font-style: normal
+	font-weight: 400
+	font-size: 72px
+	line-height: 150%
+	/* identical to box height, or 108px */
+	letter-spacing: 0.06em
+	text-decoration: none
+
+=h2-text()
+	font-style: normal
+	font-weight: 400
+	font-size: 48px
+	line-height: 150%
+	/* identical to box height, or 72px */
+	letter-spacing: 0.04em
+	margin-bottom: 0
+
+.h2-text
+	+h2-text()
+	color:$color-gray
+
+=h3-text()
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 150%
+	/* identical to box height, or 36px */
+	letter-spacing: 0.05em
+	text-transform: uppercase
+
+=main-text()
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 150%
+
+.main-text
+	+main-text()
+
+=main-text-bold()
+	font-style: normal
+	font-weight: 600
+	font-size: 20px
+	line-height: 150%
+
+=mini-text()
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	/* identical to box height, or 24px */
+
+.mini-text
+	+mini-text()
+
+=link-text()
+	font-style: italic
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	/* identical to box height, or 24px */
+	text-decoration-line: underline
+
+=btn-text-20()
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height:150%
+	letter-spacing:0.035em
+	text-decoration: none
+
+
+=shadow-1 
+	box-shadow:0px 4px 4px rgba(183,183,183,0.430)
+
+=shadow-2
+	box-shadow:0px 4px 4px rgba(46,46,46,0.270)
+
+=btn
+	height: 44px
+	min-width: 232px
+	border: none
+	border-radius: 5px
+	background: $color-blue
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	@include btn-text-20()
+	color:$color-white
+
+.btn-blue
+	+btn
+	
+.btn-orange
+	+btn
+	color: $color-orange
+
+=round_icon
+	border-radius: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+
