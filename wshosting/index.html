@@ -34,7 +34,7 @@
                         
                     </div>
                     <div class="col-4 offset-1 underheader_btns">
-						<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Купить хостинг</button>
+						<button type="button" class="btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">Купить хостинг</button>
 						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 							  <div class="modal-content">
@@ -46,13 +46,12 @@
 								  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione repudiandae sapiente dolore molestias asperiores libero sit aperiam amet voluptatum earum alias magnam tenetur consequuntur, perspiciatis obcaecati possimus inventore dicta.
 								</div>
 								<div class="modal-footer">
-								  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+								  <button type="button" class="btn-blue" data-bs-dismiss="modal">Закрыть</button>
 								  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 								</div>
 							  </div>
 							</div>
 						  </div>
-                        <!-- <button>Купить хостинг</button> -->
                         <div class="underheader_btns_login">
                             <img src="img/login.svg" alt="login">
                         </div>
@@ -66,10 +65,10 @@
         <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_item_link">хостинг</a></li>
-                    <li class="menu_item"><a href="#" class="menu_item_link">vps</a></li>
-                    <li class="menu_item"><a href="#" class="menu_item_link">регистрация доменов</a></li>
-                    <li class="menu_item"><a href="#" class="menu_item_link">ssl</a></li>
+                    <li class="menu_item"><a href="#hosting_linc" class="menu_item_link">хостинг</a></li>
+                    <li class="menu_item"><a href="#vps_linc" class="menu_item_link">vps</a></li>
+                    <li class="menu_item"><a href="#domain_reg_linc" class="menu_item_link">регистрация доменов</a></li>
+                    <li class="menu_item"><a href="#ssl_linc" class="menu_item_link">ssl</a></li>
                     <li class="menu_item nav-item dropdown">
 						<a href="#" class="menu_item_link nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">хостинг-провайдер</a>
 						<!-- <a href="#" class="arrow"><img src="img/menu_arrow.svg" alt=""></a> -->
@@ -112,7 +111,7 @@
                         </div>
                     </div>
                     <div class="col-3 subheader_btn">
-                        <button>Заказать хостинг</button>
+                        <button class="btn-orange">Заказать хостинг</button>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
 
     <section class="hostRates">
         <div class="container">
-            <h2 class="hostRates_title">Тарифы на хостинг</h2>
+            <h2 class="hostRates_title" id="hosting_linc">Тарифы на хостинг</h2>
             <div class="hostRates_descr">
                 <p>У нас оптимальные тарифы на классический виртуальный хостинг с безлимитными ресурсами на количество сайтов, баз данных и FTP.</p>
                 <p>Выбирайте наш лучший <span>безлимитный</span> хостинг в России!</p>
@@ -156,7 +155,7 @@
                                 <p>в месяц</p>
                             </div>
                         </div>
-                        <div class="hostRates_down_btn"><button>Купить хостинг</button></div>
+                        <div class="hostRates_down_btn"><button class="btn-blue">Купить хостинг</button></div>
                     </div>
         
                 </div>
@@ -187,7 +186,7 @@
                                 <p>в месяц</p>
                             </div>
                         </div>
-                        <div class="hostRates_down_btn"><button>Купить хостинг</button></div>
+                        <div class="hostRates_down_btn"><button class="btn-blue">Купить хостинг</button></div>
                     </div>
                 </div>
                 <div class="col-3">
@@ -216,7 +215,7 @@
                                 <p>в месяц</p>
                             </div>
                         </div>
-                        <div class="hostRates_down_btn"><button>Купить хостинг</button></div>
+                        <div class="hostRates_down_btn"><button class="btn-blue">Купить хостинг</button></div>
                     </div>
                 </div>
                 <div class="col-3">
@@ -245,7 +244,7 @@
                                 <p>в месяц</p>
                             </div>
                         </div>
-                        <div class="hostRates_down_btn"><button>Купить хостинг</button></div>
+                        <div class="hostRates_down_btn"><button class="btn-blue">Купить хостинг</button></div>
                     </div>
                 </div>
             </div>
@@ -302,7 +301,7 @@
 
     <section class="ssl">
         <div class="container">
-            <h2 class="ssl_title">SSL-сертификаты</h2>
+            <h2 class="ssl_title" id="ssl_linc">SSL-сертификаты</h2>
             <div class="ssl_descr">
                 <p>Купить SSL и попасть в TOP Google. WSHOST предлагает низкие цены и быстрый выпуск за счет уникальных партнерских условий с удостоверяющими центрами.</p>
                 <p>Подберите сертификат исходя из задач и предпочтений, удобные фильтры и описание помогут определиться</p>
@@ -388,11 +387,11 @@
                 </div>
 
             </div>
-            <button class="ssl_btn">Заказать SSL сертификат</button>
+            <button class="ssl_btn btn-orange">Заказать SSL сертификат</button>
         </div>
     </section>
 
-    <section class="domain">
+    <section class="domain" id="domain_reg_linc">
         <div class="domain_bg"></div>
         <img src="img/domain_bg.svg" alt="domain_bg" class="domain_bg2">
         <div class="container">
@@ -402,7 +401,7 @@
                     <p>Правильное название сайта — залог трафика и успешной рекламы.  Домен должен ассоциироваться у пользователя с конкретными услугами или отраслью. </p>
                     <p>Часто говорят: «Посмотри на auto.ru» и становится понятно, что речь про ресурс, который связан с автомобилями. Точно так же и с другими сайтами, в имени которых заложен смысл их деятельности. </p>
                     <p>Помимо основных, выделяют специальные - тематические зоны: .travel, .site, .pro и т.д.</p>
-                    <button class="domain_descr_btn">Подобрать и зарегистрировать домен</button>
+                    <button class="domain_descr_btn btn-orange">Подобрать и зарегистрировать домен</button>
                 </div>
                 <div class="col-3">
                     <div class="domain_card">
@@ -503,7 +502,7 @@
             
         </div>
         <div class="container domain_hosting">
-            <h2 class="domain_title">Хостинг VPS/VDS серверов</h2>
+            <h2 class="domain_title" id="vps_linc">Хостинг VPS/VDS серверов</h2>
             <div class="row custom-gutter">
                 <div class="col-5">
                     <img src="img/domain_hosting_bg.png" alt="">
@@ -575,7 +574,7 @@
 
     <section class="benefit">
         <div class="container">
-            <h2 class="benefit_title h2-text">Выгоды для вашего хостинга</h2>
+            <h2 class="benefit_title h2-title">Выгоды для вашего хостинга</h2>
             <div class="row custom-gutter flex-nowrap">
                 <div class="col-3">
                     <img class="benefit_logo" src="img/benefit_logo_1.svg" alt="icon">
@@ -604,11 +603,13 @@
     
     <section class="reviews">
         <div class="container">
+            <img src="img/reviews_bg.png" alt="bg" class="reviews_bg">
             <div class="row custom-gutter">
-                <div class="col-6">
-                    123
+                <div class="col-5">
+                    <h4 class="h4-title">Отзывы о нашем хостинге</h4>
+                    <p class="reviews_descr main-text">Хостинг – наша работа! Более 10 лет мы размещаем сайты своих клиентов на надёжном и современном оборудовании.<br><br>Почитайте, что говорят наши клиенты</p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 offset-1">
                     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="carousel-indicators_btn active" aria-current="true" aria-label="Slide 1"></button>
@@ -657,13 +658,221 @@
 
                 </div>
             </div>
+            <h2 class="h2-title">Вопросы и ответы</h2>
+            <p class="reviews_question_descr main-text">Здесь представлены самые популярные вопросы, которые задают нам клиенты перед оформлением заказа на виртуальный хостинг. Если вы не нашли ответ на имеющиеся у вас вопрос, задайте его нашим специалистам.</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordion1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="btn-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Что такое SSL-сертификат?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Это криптографический протокол для организации защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам, на которых происходит сбор любых данных и сведений, есть формы обратной связи или другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения, любой браузер перед переадресацией на сайт известит пользователя, о том, что соединение не безопасно. Это значительно снижает конверсию сайта и приводит к потере посетителей
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Немного о нас и наших услугах
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum et dolore. Officia ad fugiat aut deleniti reprehenderit nihil. Officiis repellat ullam quidem sint  quibusdam corrupti aliquid nostrum dignissimos fugit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Немного о нас и наших услугах
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore autem quia non nesciunt atque laborum perferendis modi optio maxime fugit, tenetur, perspiciatis   itaque consequuntur at accusantium nemo ducimus quo.
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    Как выбрать SSL-сертификат?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Это криптографический протокол для организации защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам, на которых происходит сбор любых данных и сведений, есть формы обратной связи или другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения, любой браузер перед переадресацией на сайт известит пользователя, о том, что соединение не безопасно. Это значительно снижает конверсию сайта и приводит к потере посетителей
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Есть ли бесплатные SSL-сертификаты?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum et dolore. Officia ad fugiat aut deleniti reprehenderit nihil. Officiis repellat ullam quidem sint quibusdam corrupti aliquid nostrum dignissimos fugit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Как правильно выбрать тариф?
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora reiciendis autem molestias amet possimus commodi numquam, sit sunt alias, dolor nulla hic officiis, vitae sed perspiciatis. Amet mollitia commodi explicabo.
+                                    Sint quisquam amet facere ab eius praesentium molestias. Officiis repudiandae placeat earum rerum porro veritatis quisquam deleniti cum aut. Impedit consequuntur adipisci magni commodi veritatis eligendi maxime illo tempore tenetur.
+                                    Accusamus autem ipsa aut consectetur facilis, quisquam molestiae sint deleniti ex aspernatur, harum debitis asperiores quas soluta! Ipsum soluta, dicta nam ipsam nobis provident ratione blanditiis, in, molestiae quidem earum!
+                                    Distinctio mollitia quidem facilis laudantium sunt temporibus consectetur sint iure vel voluptas alias iste quaerat provident, similique natus beatae error deleniti aliquam vero! Possimus ab eum enim fuga odio dolore.
+                                    Facere dignissimos repellat voluptate laborum, porro error tempora atque minus a aut, dolore animi quas dicta vitae voluptatem? Sit fugiat itaque molestiae reiciendis. Mollitia quis consequatur, iste et nesciunt veniam!
+                                    Odio velit quisquam est, obcaecati sequi suscipit assumenda dolore laborum quae alias tempore aspernatur voluptatem, a numquam? Molestias suscipit laborum sit? Nesciunt, iure nobis? Ullam sint earum iste numquam temporibus?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+   
 
-    <div class="container bootstrap_grid">
-        <div class="row custom-gutter custom-gutter">
-            <div class="col-1 grid"><div class="grid_column">1</div></div>
+    <section class="payment">
+        <div class="payment_arrow_left"></div>
+        <div class="payment_arrow_right"></div>
+        <div class="payment_try container">
+            <div class="payment_try_box">
+                <p>Получите <span>30 дней </span>тестирование нашего хостинга <span>бесплатно</span></p>
+                <p> Плюс, <span>100% гарантия возврата </span>всех оплаченных<br>денежных средств в этот период.</p>
+                <button class="btn-orange">Попробовать хостинг</button>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="h2-title">Способы оплаты</h2>
+            <p class="col-8 payment_descr main-text">Оплачивайте услуги виртуального хостинга WSHOST любым, удобным для вас методом. Наш хостинг также могут заказать и оплатить юридические лица безналичным переводом</p>
+            <div class="row">
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_1.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_2.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_3.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_4.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_5.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_6.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_7.png" alt="icon_1">
+                </div>
+                <div class="col-3 payment_icon">
+                    <img src="img/payment_icon_8.png" alt="icon_1">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <div class="descr mini-text">
+                        WSHOST даёт возможность купить хостинг сайтов дешево с SSL и полноценным пакетом услуг. Дешевая регистрация доменов и недорогой хостинг позволяют создать сайт любой тематики. Мы занимаем лидирующие позиции в даной сфере. Нашими клиентами являются жители городов Москва, Санкт-Петербург и т.д. Выбирая наш php хостинг вы получаете премиум услуги по низкой цене.
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tel">
+                        Телефон в Москве:
+                        <a href="tel:+74951234556" class="tel_item">+7 (495) 123-45-56</a>
+                    </div>
+                    <div class="email">
+                        Электронная почта
+                        <a href="mailto:support@wshost.ru" class="email_item">support@wshost.ru</a>
+                    </div>
+                    <div class="adress">
+                        Адрес дата-ценра и офиса продаж
+                        <a href="https://yandex.ru/maps/213/moscow/house/varshavskoye_shosse_125/Z04YcAZpSkwBQFtvfXpzdHVrYA==/?indoorLevel=1&ll=37.619396%2C55.625984&utm_source=main_stripe_big&z=17.11" target="_blanc" class="adress_item">г. Москва,  Варшавское шоссе, д. 125</a>
+                        <p>Tехническая поддержка работает 24/7</p>
+                    </div>
+                    
+                </div>
+                <div class="col-3 d-flex flex-column align-items-end">
+                    <div class="social">
+                        <a href="https://twitter.com/" class="social_icon" target="_blanc"><img src="img/twitter_icon.svg" alt="twitter"></a>
+                        <a href="https://www.instagram.com/" class="social_icon" target="_blanc"><img src="img/instagram_icon.svg" alt="instagram"></a>
+                        <a href="https://vk.com/" class="social_icon" target="_blanc"><img src="img/vk_icon.svg" alt="vk"></a>
+                        <a href="https://facebook.com/" class="social_icon" target="_blanc"><img src="img/facebook_icon.svg" alt="facebook"></a>
+                    </div>
+                    <button class="btn-blue">Report Spam</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <span class="about_descr">О компании</span>
+                    <ul class="about_list">
+                        <li><a href="#">О хостинг-провайдере</a></li>
+                        <li><a href="#">Партнёрская программа</a></li>
+                        <li><a href="#">Дата-центр</a></li>
+                        <li><a href="#">Документы для клиентов</a></li>
+                        <li><a href="#">Договор на услуги хостинга</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <span class="our_descr">Наши услуги</span>
+                    <ul class="our_list">
+                        <li><a href="#">Виртуальный хостинг</a></li>
+                        <li><a href="#">Хостинг для 1С-Битрикс</a></li>
+                        <li><a href="#">Хостинг для Wordpress</a></li>
+                        <li><a href="#">Аренда VPS</a></li>
+                        <li><a href="#">Регистрация доменов</a></li>
+                        <li><a href="#">SSL сертификаты</a></li>
+                        <li><a href="#">Конструктор сайтов</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright align-items-center">
+                <span class="col">© 2007-2021 ООО "Вебсайт хостинг". Все права защищены.</span>
+                <a href="#" class="col">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="backup_btn" title="Go to top"><img src="img/menu_arrow.svg" alt=""></button>
+    <script src="js/backup_btn.js"></script>
+
+    <!-- <div class="container bootstrap_grid">
+        <div class="row custom-gutter">
+            <div class="col grid"><div class="grid_column">1</div></div>
             <div class="col grid"><div class="grid_column">2</div></div>
             <div class="col grid"><div class="grid_column">3</div></div>
             <div class="col grid"><div class="grid_column">4</div></div>
@@ -676,7 +885,8 @@
             <div class="col grid"><div class="grid_column">11</div></div>
             <div class="col grid"><div class="grid_column">12</div></div>
         </div>
-    </div>
+    </div> -->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     

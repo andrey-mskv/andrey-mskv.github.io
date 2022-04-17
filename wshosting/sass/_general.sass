@@ -1,11 +1,3 @@
-.grid
-	border: none
-	&_column
-		text-align: center
-		background-color: #ff000021
-		height: 30px
-		+mini-text()
-		z-index: -10
 
 .underheader
 	display: flex
@@ -60,6 +52,9 @@
 			+mini-text()
 			color: $color-white
 			text-decoration: none
+			transition: .3s all
+			&:hover
+				color: $color-orange
 	&_btns
 		display: flex
 		justify-content: end
@@ -71,6 +66,12 @@
 			height: 44px
 			background-color: $color-blue
 			margin-left: 36px
+			transition: .6s all
+			// transform: rotate3D(0,0,0,45deg)
+			cursor: pointer
+			&:hover
+				transform: rotate3D(0,1,0,180deg)
+				background-color: $color-orange
 
 nav
 	position: relative
@@ -131,6 +132,7 @@ nav
 				min-width: 17rem
 				border: none
 				border-radius: 0
+				transition: 0s
 				.dropdown-item
 					+main-text
 					text-transform: uppercase
@@ -615,11 +617,11 @@ nav
 				&:nth-child(odd) > .first_column
 					background-color: rgba(27,86,124,0.8) 
 					font-weight: 600
-					color: $color_white
+					color: $color-white
 				&:nth-child(even) > .first_column
 					background-color: $color-blue-dark
 					font-weight: 600
-					color: $color_white
+					color: $color-white
 				&:last-child > .first_column
 					background-color: rgba(27,86,124,0.8)
 		ul
@@ -672,8 +674,16 @@ nav
 
 
 .reviews
+	position: relative
+	padding: 103px 0
 	// background-color: #dce6f1
-	min-height: 470px	
+	min-height: 1440px
+	&_bg
+		position: absolute
+		top: 290px
+		left: 0
+	&_descr
+		margin-top: 40px	
 	.carousel-item
 		position: relative
 		width: 100%
@@ -710,7 +720,7 @@ nav
 				box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27)
 	.carousel
 		&-indicators
-			gap: 6	px
+			gap: 8px
 			bottom: -25px
 			&_btn
 				width: 8px
@@ -718,10 +728,193 @@ nav
 				border-radius: 100%
 				background: $color-blue
 				border: none
-
-
+	.h2-title
+		text-align: center
+		margin-top: 50px
+	&_question_descr
+		margin-top: 60px
+		width: 740px
+	
+	.accordion
+		&-item
+			margin-bottom: 20px
+			box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27)
+		.btn-accordion
+			// position: relative
+			padding: 25px
+			display: flex
+			align-items: center
+			border: none
+			height: 80px
+			background-color: $color-white
+			+main-text-bold()
+			color: $color-blue-dark
+			&::before
+				display: inline-block
+				margin-right: 25px
+				content: ''
+				background-image: url(../img/accordion_plus.png)
+				width: 31px
+				height: 31px
+				transition: 0.3s all
+			&:not(.collapsed)::before
+				background-image: url(../img/accordion_minus.png)
+				transform: rotate(90deg)
+		&-body
+			+mini-text()
+			color: $color-gray
+			padding: 0 40px 36px 80px
 	
 
+.payment
+	position: relative
+	min-height: 840px
+	padding: 290px 0 120px 0
+	background: linear-gradient(180deg, rgba(124, 180, 216, 0.4) 0%, rgba(191, 230, 255, 0) 100%)
+	&_arrow
+		&_left
+			position: absolute
+			background: url(../img/payment_arrow_left.svg) center center/contain no-repeat
+			width: 170px
+			height: 173px
+			top: -90px
+			left: -2px
+		&_right
+			position: absolute
+			background: url(../img/payment_arrow_right.svg) center center/contain no-repeat
+			height: 195px
+			width: 185px
+			top: -40px
+			right: 0px
+	&_try
+		position: absolute
+		top: -100px
+		left: 50%
+		transform: translateX(-50%)
+		// transform: translateY(-390px)
+		&_box
+			margin: 0 80px
+			height: 310px
+			background: $color-blue-dark
+			box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27)
+			border-radius: 10px
+			
+			padding: 64px 55px 40px 55px
+			p
+				+h3-text
+				color: $color-white
+				text-align: center
+				span
+					color: $color-orange
+					font-weight: 700
+			.btn-orange
+				width: 320px
+				display: block
+				margin: 0 auto
+				margin-top: 36px
+				box-shadow: none
+	.h2-title
+		text-align: center
+	&_descr
+		margin: 55px 0
+	&_icon
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 30px 0
+		border-right: 1px solid rgba(103,168,210,.6)  
+		&:nth-child(4), &:nth-child(8)
+			border: none
 
-
+footer
+	min-height: 827px
+	background: $color-text
+	padding-top: 90px
+	.descr
+		color: $color-text-2
+		margin-top: 15px
+	.tel, .email, .adress
+		position: relative
+		+mini-text()
+		color: $color-text-2
+		margin-bottom: 20px
+		margin-left: 80px
+		&_item
+			+main-text-bold()
+			font-size: 16px
+			color: $color-white
+			display: block
+			text-decoration: none
+			transition: 0.3s all
+			&:hover
+				color: $color-orange
+		&::before
+			position: absolute
+			left: -40px
+			top: -3px
+			display: inline-block
+			content: ''
+			width: 30px
+			height: 30px
+			background: url(../img/clarity_phone-handset-line.svg) center center/contain no-repeat, rgba(255,255,255,.2)
+			background-size: 19px 19px
+			border-radius: 100%
+		p
+			margin-top: 24px
+			color: $color-white
+	.social
+		display: flex
+		justify-content: end
+		gap: 20px
+		&_icon
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 48px
+			height: 48px
+			border-radius: 100%
+			background: linear-gradient(90deg, #7CB4D8 0%, rgba(191, 230, 255, 0) 100%)
+			transition: .3s all
+			&:hover
+				background: #7CB4D8
+	.btn-blue
+		height: 31px
+		min-width: 88px
+		font-size: 14px	
+		margin-top: 48px
+	.about_descr, .our_descr
+		+main-text-bold()
+		color: $color-text-2
+		display: block
+		margin-top: 68px
+		margin-bottom: 10px
+	.about_list, .our_list
+		list-style: none
+		padding: 0
+		margin-bottom: 0
+		a
+			+main-text()
+			color: $color-white
+			font-size: 16px
+			text-decoration: none
+			font-weight: 300
+			transition: .3s all
+			&:hover
+				color: $color-text-2
+	.our_list
+		line-height: 165%
+	.copyright
+		margin-top: 40px
+		height: 77px
+		color: rgba(133,133,133,0.5)
+		border-top: 1px solid rgba(133,133,133,0.5)
+		padding-bottom: 10px
+		a
+			text-align: right
+			color: rgba(133,133,133,0.5)
+			text-decoration: none
+			transition: 0.3s all
+			&:hover
+				text-decoration: underline
+				color: rgba(133,133,133,1)
 		

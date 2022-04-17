@@ -9,7 +9,7 @@ body
 	padding-right: 0.625rem
 	padding-left: 0.625rem
 
-  
+
 
 
 
@@ -23,4 +23,18 @@ body
 @import "variables"
 @import "mixins"
 @import "media"
+@import "modal"
 @import "general"
+
+.bootstrap_grid
+	// display: none
+	position: relative
+	z-index: 10
+	transform: translateY(100px)
+	.grid
+		border: none
+		&_column
+			text-align: center
+			background-color: #ffffff21
+			height: 30px
+			+mini-text()

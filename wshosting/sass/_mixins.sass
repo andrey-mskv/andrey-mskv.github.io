@@ -16,7 +16,7 @@
 	letter-spacing: 0.04em
 	margin-bottom: 0
 
-.h2-text
+.h2-title
 	+h2-text()
 	color:$color-gray
 
@@ -29,6 +29,15 @@
 	letter-spacing: 0.05em
 	text-transform: uppercase
 
+.h4-title
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 150%
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	color: $color-gray
+
 =main-text()
 	font-style: normal
 	font-weight: 400
@@ -37,6 +46,7 @@
 
 .main-text
 	+main-text()
+	color: $color-gray
 
 =main-text-bold()
 	font-style: normal
@@ -53,6 +63,7 @@
 
 .mini-text
 	+mini-text()
+	color: $color-gray
 
 =link-text()
 	font-style: italic
@@ -82,17 +93,34 @@
 	min-width: 232px
 	border: none
 	border-radius: 5px
-	background: $color-blue
+	background-color: $color-blue
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	@include btn-text-20()
 	color:$color-white
+	transition: 0.3s all
 
 .btn-blue
 	+btn
+	&:hover
+		background-color: $color-text-2
+		box-shadow: none
 	
 .btn-orange
 	+btn
-	color: $color-orange
+	background-color: $color-orange
+	&:hover
+		background-color: $color-text-2
+		box-shadow: none
+
+.btn-accordion
+	border: none
+	height: 80px
+	background-color: $color-white
+	color: $color-blue-dark
+	+main-text-bold()
+		
+
+
 
 =round_icon
 	border-radius: 100%
